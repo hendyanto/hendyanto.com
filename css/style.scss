@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'homizionovalightlight';
+    src: url('font/homizionovawflight-webfont.eot');
+    src: url('font/homizionovawflight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/homizionovawflight-webfont.woff') format('woff'),
+         url('font/homizionovawflight-webfont.ttf') format('truetype'),
+         url('font/homizionovawflight-webfont.svg#homizionovalightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.main
+{
+	font-family: 'homizionovalightlight';
+	color:black;
+	background-color: white;
+    font-size: 3em;
+    padding: 0 15px;
+    background-image: url("image/pattern.jpg");
+}
+
+.hero
+{
+    text-align: center;
+    .top
+    {
+        
+    }
+    .mid
+    {
+        font-size: 0.5em;
+
+        .inner
+        {
+            padding: 0.4em;
+            background-color: black;
+            color: white;
+        }
+    }
+    .red
+    {
+        color: red;
+    }
+}
+
+.nav-item
+{
+    font-size: 0.7em;
+    text-align: center;
+    background-color: black;
+    margin-top: 0.5em;
+    padding: 0.1em;
+    a
+    {
+        color: white;
+    }
+}
