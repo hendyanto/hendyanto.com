@@ -1,270 +1,126 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <title>Welcome to hendyanto.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="assets/styles/normalize.css">
+    <style>
+      body { margin:0 auto; max-width: 600px; padding: 1em; background-color: greenyellow; }
+      .hero-image { margin: 0 auto; display: block; width: 100px; }
+      .menu { width: 100%; text-align: center; }
+      .table-hyperlinks { width: 100%; }
+      .table-about { width: 100%; }
+      .table-skills { width: 100%; text-align: center; }
+      .icon { width: 30px; }
+    </style>
 
-    <title>An online real estate of Hendyanto</title>
+  </head>
+  <body>
+    <articlefull-width>
+      <img class="hero-image" src="assets/images/globe.webp">
+      <marquee>
+        <h1>Welcome to my personal website!</h1>
+      </marquee>
+    </article>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <table class="menu" border="1">
+      <tr>
+        <td> <a href="index.html">Home</a> </td>
+        <td>Blog</td>
+      </tr>
+    </table>
 
-    <!-- Add custom CSS here -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-</head>
+    <h2>About me</h2>
+    <table class="table-about" border="1">
+      <tr>
+        <td>I am a software developer working from Indonesia. <img class="icon" src="assets/images/indonesia-flag.gif" alt="Indonesian Flag"></td>
+      </tr>
+      <tr>
+        <td>Works mainly on web apps, and mobile apps as well.</td>
+      </tr>
+      <tr>
+        <td>Fullstack developer, but seems to be better on backend stuff.</td>
+      </tr>
+      <tr>
+        <td>Skill list</td>
+      </tr>
+      <tr>
+        <td>
+          <table class="table-skills" border="1">
+            <tr>
+              <td>Ruby <img src="assets/images/ruby.png" class="icon" alt="ruby"></td>
+              <td>
+                Production experience at huge scale using Ruby on Rails framework.
+              </td>
+            </tr>
+            <tr>
+              <td>PostgreSQL <img src="assets/images/postgre.png" class="icon" alt="postgre"> and mySQL 
+                  <img src="assets/images/mysql-logo.png" class="icon" alt="mysql">
+              </td>
+              <td>
+                Optimizing queries, indexes, and basic usages.
+              </td>
+            </tr>
+            <tr>
+              <td>PHP <img src="assets/images/php.webp" class="icon" alt="php"></td>
+              <td>
+                Production experience at small scale, first work experience.
+                Using Codeigniter and custom framework.
+              </td>
+            </tr>
+            <tr>
+              <td>HTML <img src="assets/images/html.gif" class="icon" alt="html5"></td>
+              <td rowspan="2"> As long as Google and Stackoverflow works, manageable. </td>
+            </tr>
+            <tr>
+              <td>CSS <img src="assets/images/css3.png" class="icon" alt="css"></td>
+            </tr>
+            <tr>
+              <td>Javascript <img src="assets/images/js.png" class="icon" alt="css"></td>
+              <td> Production experience of using video.js and creating component for it. </td>
+            </tr>
+            <tr>
+              <td>React Native <img src="assets/images/react-native.png" class="icon" alt="react-native"></td>
+              <td> Created an app to manage boarding houses, Android and iOS. Production but small scale.</td>
+            </tr>
+            <tr>
+              <td>Docker <img src="assets/images/docker.webp" class="icon" alt="docker"></td>
+              <td> Deployed boarding house management RoR app using docker compose. I only know docker compose :).</td>
+            </tr>
+            <tr>
+              <td>AWS <img src="assets/images/aws.png" class="icon" alt="aws"> and GCP <img src="assets/images/gcp.png" class="icon" alt="GCP"></td>
+              <td> Production experince on both, understood tools like load balancer, instance groups, networking (a little).</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
 
-<body>
+    <h2>Other links</h2>
+    <table class="table-hyperlinks" border="1">
+      <tr>
+        <td>
+          <a href="https://www.linkedin.com/in/hendyanto/">Linkedin Profile</a>
+        </td>
+        <td>My linked in profile, check it out!</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/hendyanto">Github Profile</a>
+        </td>
+        <td>Not much to see here :)</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://vidio.com">Vidio.com</a>
+        </td>
+        <td>Favourite streaming site</td>
+      </tr>
+    </table>
 
-    <!-- Side Menu -->
-    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">Hendyanto
-            </li>
-            <li><a href="#top">Home</a>
-            </li>
-            <li><a href="#about">About</a>
-            </li>
-            <li><a href="https://medium.com/@Hendyanto">Stories</a>
-            </li>
-            <li><a href="#services">Skill Sets</a>
-            </li>
-            <li><a href="#portfolio">Featured Works</a>
-            </li>
-            <li><a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>
-    <!-- /Side Menu -->
+    <article>
+      <img class="hero-image" src="assets/images/thanks.webp">
+    </article>
 
-    <!-- Full Page Image Header Area -->
-    <div id="top" class="header">
-        <div class="vert-text">
-            <h3>
-                Hello!
-                I am
-            </h3>
-            <h1>Hendyanto</h1>
-            <h3>
-                an evergrowing Web Developer and Entrepreneur.
-            </h3>
-            <a href="#about" class="btn btn-default btn-lg">Find Out More</a>
-            <a href="https://medium.com/@Hendyanto" class="btn btn-default btn-lg">Stories</a>
-        </div>
-    </div>
-    <!-- /Full Page Image Header Area -->
-
-    <!-- Intro -->
-    <div id="about" class="intro">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <h2>I am a web developer based on Jakarta, Indonesia.</h2>
-                    <p class="lead">
-                        I believe that everything can be solved by web technology, or at the very least, simplified and improved.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Intro -->
-
-    <!-- Services -->
-    <div id="services" class="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 col-md-offset-3 text-center">
-                    <h2>Skill Sets</h2>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-md-offset-2 text-center">
-                    <div class="service-item">
-                        <i class="service-icon fa fa-magnet"></i>
-                        <h4>Back End Dev</h4>
-                        <p>The core of web developent, it is what basically 'run' the internet, it make a website 'alive'.</p>
-                        <p>Currently I am learning Ruby on Rails. Fluent in PHP and Codeigniter Framework.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 text-center">
-                    <div class="service-item">
-                        <i class="service-icon fa fa-rocket"></i>
-                        <h4>Front End Dev</h4>
-                        <p>This is something enable a website to be unique, interesting, and beautiful.</p>
-                        <p>Able to fluently use javascript (core, jQuery, plus a couple of plugins), AJAX, CSS3 (SASS), HTML5, and a couple of bootstrap.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 text-center">
-                    <div class="service-item">
-                        <i class="service-icon fa fa-shield"></i>
-                        <h4>Projects Planning</h4>
-                        <p>Based on your requirement and my knowledge, I can offer you the best solution and I will gladly help you to make it better.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Services -->
-
-
-    <!-- Portfolio -->
-    <div id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>Featured Work</h2>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-2 text-center">
-                    <div class="portfolio-item">
-                        <!-- <a target="_BLANK" href="http://tuntun.web.id/"> -->
-                            <img class="img-portfolio img-responsive" src="img/tuntun.jpg">
-                        <!-- </a> -->
-                        <h4><strong>Tuntun</strong>, an Indonesian public transport navigator.</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item">
-                        <a target="_BLANK" href="http://knockershardware.com/">
-                            <img class="img-portfolio img-responsive" src="img/knockers.jpg">
-                        </a>
-                        <h4><strong>Knockershardware</strong>, you can find the unique beds, hinges, doors, etc.</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>A proud team member of</h2>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 col-md-offset-2 text-center">
-                    <div class="portfolio-item">
-                        <a target="_BLANK" href="http://www.kmklabs.com/">
-                            <img class="img-portfolio img-responsive" src="img/kmklogo.png">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-2 col-md-offset text-center">
-                    <div class="portfolio-item">
-                        <a target="_BLANK" href="http://www.papdan.com/">
-                            <img class="img-portfolio img-responsive" src="img/papdan.gif">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-2 text-center">
-                    <div class="portfolio-item">
-                        <a target="_BLANK" href="http://www.garuda-indonesia.com/">
-                            <img class="img-portfolio img-responsive" src="img/garudaindonesia.jpg">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-2 text-center">
-                    <div class="portfolio-item">
-                        <a target="_BLANK" href="http://www.babastudio.com/">
-                            <img class="img-portfolio img-responsive" src="img/babastudio.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
-                    click logo to visit them!
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Portfolio -->
-    
-    <!-- Call to Action -->
-    <div id="contact" class="call-to-action">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <h3>If you think I can help You..</h3>
-                    <a href="mailto:hendyanto.inbox@gmail.com" class="btn btn-lg btn-default">Get in touch</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Call to Action -->
-
-    <!-- Map -->
-    
-    <!-- /Map -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <ul class="list-inline">
-                        <li><a href="https://www.facebook.com/hendyantocheng"><i class="fa fa-facebook fa-3x"></a></i>
-                        </li>
-                        <li><a href="https://www.linkedin.com/in/hendyanto/"><i class="fa fa-linkedin fa-3x"></i></a>
-                        </li>
-                        </li>
-                    </ul>
-                    <div class="top-scroll">
-                        <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
-                    </div>
-                    <hr>
-                    <p>V 1.0 &copy; <a href="http://hendyanto.com/">Hendyanto</a> 2016</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- /Footer -->
-
-    <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
-
-    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
-    <script>
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    </script>
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    </script>
-    <script>
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>
-
-</body>
-
+  </body>
 </html>

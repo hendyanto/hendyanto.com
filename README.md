@@ -1,1 +1,0 @@
-# hendyanto.com
