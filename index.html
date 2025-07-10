@@ -1,118 +1,275 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <title>Welcome to hendyanto.com</title>
+<head>
+    <title>hendyanto.com - Personal Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/styles/normalize.css">
     <style>
-      body { margin:0 auto; max-width: 600px; padding: 1em; background-color: greenyellow; }
-      .hero-image { margin: 0 auto; display: block; width: 100px; }
-      .table-hyperlinks { width: 100%; }
-      .table-about { width: 100%; }
-      .table-skills { width: 100%; text-align: center; }
-      .icon { width: 30px; }
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Courier New', monospace;
+            background-color: #c0c0c0;
+            color: #000;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        main {
+            max-width: 640px;
+            margin: 0 auto;
+            background: #c0c0c0;
+            border: 2px inset #c0c0c0;
+            padding: 10px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #008080;
+            color: #ffffff;
+            border: 2px outset #008080;
+        }
+
+        h1 {
+            font-size: 16px;
+            margin: 10px 0;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 14px;
+            margin: 15px 0 10px 0;
+            color: #000080;
+            font-weight: bold;
+            border-bottom: 1px solid #000080;
+            padding-bottom: 2px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #ffffff;
+            border: 1px inset #c0c0c0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            font-size: 11px;
+        }
+
+        th, td {
+            border: 1px solid #808080;
+            padding: 4px 6px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #c0c0c0;
+            font-weight: bold;
+        }
+
+        .skill-table td:first-child {
+            background: #e0e0e0;
+            font-weight: bold;
+            width: 120px;
+        }
+
+        .link-table td:first-child {
+            background: #e0e0e0;
+            width: 150px;
+        }
+
+        a {
+            color: #0000ff;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #800080;
+        }
+
+        a:hover {
+            color: #ff0000;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .flag {
+            display: inline-block;
+            width: 16px;
+            height: 10px;
+            background: 
+                linear-gradient(to bottom, 
+                    #ff0000 0%, #ff0000 50%, 
+                    #ffffff 50%, #ffffff 100%);
+            border: 1px solid #000;
+            margin-left: 3px;
+        }
+
+
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #008080;
+            color: #ffffff;
+            border: 2px outset #008080;
+            font-size: 11px;
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        .status-bar {
+            background: #c0c0c0;
+            border: 1px inset #c0c0c0;
+            padding: 2px 5px;
+            font-size: 10px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+                font-size: 10px;
+            }
+            
+            main {
+                padding: 5px;
+            }
+            
+            table {
+                font-size: 9px;
+            }
+            
+            .skill-table td:first-child {
+                width: 80px;
+            }
+        }
     </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Welcome to hendyanto.com</h1>
+            <p>Personal Homepage <span class="blink">█</span></p>
+        </header>
 
-  </head>
-  <body>
-    <articlefull-width>
-      <img class="hero-image" src="assets/images/globe.webp">
-      <marquee>
-        <h1>Welcome to my personal website!</h1>
-      </marquee>
-    </article>
+        <section>
+            <h2>About Me</h2>
+            <table>
+                <tr>
+                    <td>I am a software developer working from Indonesia. <span class="flag"></span></td>
+                </tr>
+                <tr>
+                    <td>Works mainly on web apps, and mobile apps as well.</td>
+                </tr>
+                <tr>
+                    <td>Fullstack developer, but seems to be better on backend stuff.</td>
+                </tr>
+            </table>
+        </section>
 
-    <h2>About me</h2>
-    <table class="table-about" border="1">
-      <tr>
-        <td>I am a software developer working from Indonesia. <img class="icon" src="assets/images/indonesia-flag.gif" alt="Indonesian Flag"></td>
-      </tr>
-      <tr>
-        <td>Works mainly on web apps, and mobile apps as well.</td>
-      </tr>
-      <tr>
-        <td>Fullstack developer, but seems to be better on backend stuff.</td>
-      </tr>
-      <tr>
-        <td>Skill list</td>
-      </tr>
-      <tr>
-        <td>
-          <table class="table-skills" border="1">
-            <tr>
-              <td>Ruby <img src="assets/images/ruby.png" class="icon" alt="ruby"></td>
-              <td>
-                Production experience at huge scale using Ruby on Rails framework.
-              </td>
-            </tr>
-            <tr>
-              <td>PostgreSQL <img src="assets/images/postgre.png" class="icon" alt="postgre"> and mySQL 
-                  <img src="assets/images/mysql-logo.png" class="icon" alt="mysql">
-              </td>
-              <td>
-                Optimizing queries, indexes, and basic usages.
-              </td>
-            </tr>
-            <tr>
-              <td>PHP <img src="assets/images/php.webp" class="icon" alt="php"></td>
-              <td>
-                Production experience at small scale, first work experience.
-                Using Codeigniter and custom framework.
-              </td>
-            </tr>
-            <tr>
-              <td>HTML <img src="assets/images/html.gif" class="icon" alt="html5"></td>
-              <td rowspan="2"> As long as Google and Stackoverflow works, manageable. </td>
-            </tr>
-            <tr>
-              <td>CSS <img src="assets/images/css3.png" class="icon" alt="css"></td>
-            </tr>
-            <tr>
-              <td>Javascript <img src="assets/images/js.png" class="icon" alt="css"></td>
-              <td> Production experience of using video.js and creating component for it. </td>
-            </tr>
-            <tr>
-              <td>React Native <img src="assets/images/react-native.png" class="icon" alt="react-native"></td>
-              <td> Created an app to manage boarding houses, Android and iOS. Production but small scale.</td>
-            </tr>
-            <tr>
-              <td>Docker <img src="assets/images/docker.webp" class="icon" alt="docker"></td>
-              <td> Deployed boarding house management RoR app using docker compose. I only know docker compose :).</td>
-            </tr>
-            <tr>
-              <td>AWS <img src="assets/images/aws.png" class="icon" alt="aws"> and GCP <img src="assets/images/gcp.png" class="icon" alt="GCP"></td>
-              <td> Production experince on both, understood tools like load balancer, instance groups, networking (a little). Deploying using ansible.</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
+        <section>
+            <h2>Technical Skills</h2>
+            <table class="skill-table">
+                <thead>
+                    <tr>
+                        <th>Technology</th>
+                        <th>Experience</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ruby</td>
+                        <td>Production experience at huge scale using Ruby on Rails framework.</td>
+                    </tr>
+                    <tr>
+                        <td>PostgreSQL</td>
+                        <td>Optimizing queries, indexes, and basic usages.</td>
+                    </tr>
+                    <tr>
+                        <td>MySQL</td>
+                        <td>Database management and optimization.</td>
+                    </tr>
+                    <tr>
+                        <td>PHP</td>
+                        <td>Production experience at small scale, first work experience. Using Codeigniter and custom framework.</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td rowspan="2">As long as Google and Stackoverflow works, manageable.</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Production experience of using video.js and creating component for it.</td>
+                    </tr>
+                    <tr>
+                        <td>React Native</td>
+                        <td>Created an app to manage boarding houses, Android and iOS. Production but small scale.</td>
+                    </tr>
+                    <tr>
+                        <td>Docker</td>
+                        <td>Deployed boarding house management RoR app using docker compose. I only know docker compose :).</td>
+                    </tr>
+                    <tr>
+                        <td>AWS & GCP</td>
+                        <td>Production experience on both, understood tools like load balancer, instance groups, networking (a little). Deploying using ansible.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <h2>Other links</h2>
-    <table class="table-hyperlinks" border="1">
-      <tr>
-        <td>
-          <a href="https://www.linkedin.com/in/hendyanto/">Linkedin Profile</a>
-        </td>
-        <td>My linked in profile, check it out!</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="https://github.com/hendyanto">Github Profile</a>
-        </td>
-        <td>Not much to see here :)</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="https://vidio.com">Vidio.com</a>
-        </td>
-        <td>Favourite streaming site</td>
-      </tr>
-    </table>
+        <section>
+            <h2>External Links</h2>
+            <table class="link-table">
+                <thead>
+                    <tr>
+                        <th>Resource</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://www.linkedin.com/in/hendyanto/">LinkedIn Profile</a></td>
+                        <td>My linked in profile, check it out!</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/hendyanto">GitHub Profile</a></td>
+                        <td>Not much to see here :)</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://vidio.com">Vidio.com</a></td>
+                        <td>Favourite streaming site</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <article>
-      <img class="hero-image" src="assets/images/thanks.webp">
-    </article>
+        <div class="status-bar">
+            Status: Online | Last Updated: 2025 | Browser: Compatible
+        </div>
 
-  </body>
+        <footer>
+            <p>Thanks for visiting!</p>
+        </footer>
+    </main>
+</body>
 </html>
