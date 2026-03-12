@@ -142,6 +142,24 @@
             margin-top: 10px;
         }
 
+        .claw-ribbon {
+            position: fixed;
+            top: 18px;
+            right: -56px;
+            width: 220px;
+            text-align: center;
+            background: #cc0000;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 12px;
+            padding: 6px 0;
+            border: 1px solid #7a0000;
+            box-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #808080;
+            transform: rotate(45deg);
+            z-index: 999;
+            pointer-events: none;
+        }
+
         @media (max-width: 480px) {
             body {
                 padding: 10px;
@@ -159,10 +177,19 @@
             .skill-table td:first-child {
                 width: 80px;
             }
+
+            .claw-ribbon {
+                top: 14px;
+                right: -66px;
+                width: 210px;
+                font-size: 10px;
+                padding: 5px 0;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="claw-ribbon">🦞 CLAWED BY OPENCLAW</div>
     <main>
         <header>
             <h1>Welcome to hendyanto.com</h1>
@@ -265,7 +292,6 @@
 
         <footer>
             <p>Thanks for visiting!</p>
-            <p style="font-size: 9px; color: #ff0000; margin-top: 10px; font-weight: bold;">🦞 Clawed by OpenClaw</p>
         </footer>
     </main>
 </body>
